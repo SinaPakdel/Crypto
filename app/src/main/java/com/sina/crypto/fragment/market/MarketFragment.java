@@ -11,11 +11,11 @@ import android.view.ViewGroup;
 import com.sina.crypto.R;
 
 
-public class MaketFragment extends Fragment {
+public class MarketFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_maket, container, false);
+        return inflater.inflate(R.layout.fragment_market, container, false);
     }
 }

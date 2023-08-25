@@ -5,7 +5,7 @@
     android:id="@+id/constraintMarket"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.market.MaketFragment">
+    tools:context=".fragment.market.MarketFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

@@ -1,4 +1,4 @@
-package com.sina.crypto.fragment.wtchlist;
+package com.sina.crypto.fragment.watchlist;
 
 import android.os.Bundle;
 
