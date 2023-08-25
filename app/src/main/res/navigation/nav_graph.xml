@@ -15,4 +15,9 @@
         android:name="com.sina.crypto.fragment.market.MaketFragment"
         android:label="fragment_maket"
         tools:layout="@layout/fragment_maket" />
+    <fragment
+        android:id="@+id/watchlistFragment2"
+        android:name="com.sina.crypto.fragment.wtchlist.WatchlistFragment"
+        android:label="fragment_watchlist"
+        tools:layout="@layout/fragment_watchlist" />
 </navigation>
