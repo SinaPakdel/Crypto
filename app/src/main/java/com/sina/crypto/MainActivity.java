@@ -3,6 +3,7 @@ package com.sina.crypto;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.AppBarConfiguration;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     NavHostFragment navHostFragment;
     NavController navController;
 
+    AppBarConfiguration appBarConfiguration;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
         navController = navHostFragment.getNavController();
+
+        appBarConfiguration = new AppBarConfiguration.Builder(R.id.homeFragment, R.id.marketFragment, R.id.watchlistFragment).setOpenableLayout(binding.drawerLayout).build();
         setupBottomNavMenu();
 
     }
+
     private void setupBottomNavMenu() {
         PopupMenu popupMenu = new PopupMenu(this, null);
         popupMenu.inflate(R.menu.home_menu);
